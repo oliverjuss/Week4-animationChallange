@@ -1,0 +1,94 @@
+body{
+    background-color: #ededed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+
+    border: 1px solid white;
+    margin: 15rem auto;
+    width: 600px;
+    height: 600px;
+}
+
+.main div 
+{
+    
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+#red {
+    background-color: red;
+    animation: redCicle;
+    position: relative;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes redCicle
+{
+    0%
+    {
+        top: -25rem;
+    }
+    100%
+    {
+        top: 0;
+    }
+}
+
+
+#yellow {
+    background-color: yellow;
+    animation: yellowCicle;
+    position: relative;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes yellowCicle {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        top: 1;
+    }
+}
+
+#green {
+    background-color: green;
+    animation: greenCicle;
+    position: relative;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes greenCicle
+{
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+/*HINT -   transform: rotateY(0deg);*/
